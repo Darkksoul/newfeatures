@@ -84,10 +84,13 @@ async def start(client:Client, message):
         ],[
             InlineKeyboardButton('🎬 ᴄʜᴀɴɴᴇʟ', url='https://t.me/+boakQes5mKdlYTM1')
         ]]   
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_text(script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
+        
+        await message.reply_photo(
+            photo=(PICS),
+            caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
+            parse_mode=enums.ParseMode.HTML,
+            has_spoiler=True,
+            reply_markup = InlineKeyboardMarkup(buttons)
         )
         return
 
