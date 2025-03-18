@@ -30,17 +30,17 @@ DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "tjbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'tjbotdatabase')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001786924542'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/hNt.jpg')
 PICS = environ.get('PICS', 'https://te.legra.ph/file/155f5cc22394659205dfd.jpg')
 
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1001786924542'))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', ''))
 URL = environ.get('URL', '')
 
 # verify system vars
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001786924542'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/How_To_Download_Movie_Video/7")
 TUTORIAL2 = environ.get("TUTORIAL2", "https://t.me/How_To_Download_Movie_Video/7")
 TUTORIAL3 = environ.get("TUTORIAL3", "https://t.me/How_To_Download_Movie_Video/7")
@@ -57,9 +57,9 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "3600"))
 # languages search
 LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam"]
 
-auth_channel = environ.get('AUTH_CHANNEL', '-1002273359017')
+auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002001530907'))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
 
 # bot settings
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
