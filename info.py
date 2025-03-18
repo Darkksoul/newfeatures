@@ -27,6 +27,7 @@ USERNAME = environ.get('USERNAME', 'https://telegram.me/DevilServers')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "tjbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'tjbotdatabase')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001786924542'))
