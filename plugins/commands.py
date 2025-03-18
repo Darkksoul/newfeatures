@@ -86,7 +86,6 @@ async def start(client:Client, message):
             photo=(PICS),
             caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
             parse_mode=enums.ParseMode.HTML,
-            has_spoiler=True,
             reply_markup = InlineKeyboardMarkup(buttons)
         )
         return
